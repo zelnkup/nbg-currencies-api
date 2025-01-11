@@ -49,7 +49,7 @@ Fetch rates for all currencies on the current date:
 
 .. code:: python
 
-   from nbg_currency_service import NBGCurrencyService
+   from nbg_currency_api import NBGCurrencyService
 
    service = NBGCurrencyService()
    data = service.fetch()
@@ -60,7 +60,7 @@ Fetch rates for a specific currency on a specific date:
 .. code:: python
 
    from datetime import datetime
-   from nbg_currency_service import NBGCurrencyService, CurrencyEnum
+   from nbg_currency_api import NBGCurrencyService, CurrencyEnum
 
    service = NBGCurrencyService(
        date=datetime(2023, 12, 25), currency=CurrencyEnum.USD
@@ -78,7 +78,7 @@ Fetch rates asynchronously for a specific currency:
 .. code:: python
 
    import asyncio
-   from nbg_currency_service import NBGCurrencyService, CurrencyEnum
+   from nbg_currency_api import NBGCurrencyService, CurrencyEnum
 
    async def main():
        service = NBGCurrencyService(currency=CurrencyEnum.EUR, mode="ASYNC")
@@ -154,7 +154,7 @@ Fetching exchange rates for USD:
 
 .. code:: python
 
-   from nbg_currency_service import NBGCurrencyService, CurrencyEnum
+   from nbg_currency_api import NBGCurrencyService, CurrencyEnum
 
    service = NBGCurrencyService(currency=CurrencyEnum.USD)
    data = service.fetch()

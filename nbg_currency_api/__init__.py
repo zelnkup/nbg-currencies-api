@@ -1,5 +1,5 @@
-from src.services import NBGCurrencyService
-from src.types import (
+from nbg_currency_api.services import NBGCurrencyService
+from nbg_currency_api.types import (
     CurrencyEnum,
     CurrencyRateItem,
     CurrencyDataResponse,

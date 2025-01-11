@@ -39,7 +39,7 @@ pip install nbg-currency-api[async]
 Fetch rates for all currencies on the current date:
 
 ```python
-from nbg_currency_service import NBGCurrencyService
+from nbg_currency_api import NBGCurrencyService
 
 service = NBGCurrencyService()
 data = service.fetch()
@@ -50,7 +50,7 @@ Fetch rates for a specific currency on a specific date:
 
 ```python
 from datetime import datetime
-from nbg_currency_service import NBGCurrencyService, CurrencyEnum
+from nbg_currency_api import NBGCurrencyService, CurrencyEnum
 
 service = NBGCurrencyService(
     date=datetime(2023, 12, 25), currency=CurrencyEnum.USD
@@ -67,7 +67,7 @@ Fetch rates asynchronously for a specific currency:
 
 ```python
 import asyncio
-from nbg_currency_service import NBGCurrencyService, CurrencyEnum
+from nbg_currency_api import NBGCurrencyService, CurrencyEnum
 
 async def main():
     service = NBGCurrencyService(currency=CurrencyEnum.EUR, mode="ASYNC")
@@ -129,7 +129,7 @@ The `CurrencyEnum` includes all ISO codes of supported currencies, such as:
 Fetching exchange rates for USD:
 
 ```python
-from nbg_currency_service import NBGCurrencyService, CurrencyEnum
+from nbg_currency_api import NBGCurrencyService, CurrencyEnum
 
 service = NBGCurrencyService(currency=CurrencyEnum.USD)
 data = service.fetch()

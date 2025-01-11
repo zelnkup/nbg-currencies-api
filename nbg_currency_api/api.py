@@ -7,12 +7,12 @@ except ImportError:
 
 from datetime import datetime
 
-from src.exceptions import CurrencyAPIException
-from src.types import (
+from nbg_currency_api.exceptions import CurrencyAPIException
+from nbg_currency_api.types import (
     CurrencyEnum,
     ClientModeEnum,
 )
-from src.constants import BASE_URL
+from nbg_currency_api.constants import BASE_URL
 
 
 class CurrencyFetcherAPI:

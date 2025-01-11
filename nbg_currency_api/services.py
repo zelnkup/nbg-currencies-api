@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from src.api import CurrencyFetcherAPI
-from src.types import (
+from nbg_currency_api.api import CurrencyFetcherAPI
+from nbg_currency_api.types import (
     ClientModeEnum,
     CurrencyDataResponse,
     CurrencyRateItem,
