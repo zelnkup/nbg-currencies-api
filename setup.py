@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setup(
     name="nbg-currencies-api",
-    version="0.1.1",
+    version="0.1.2",
     description="API wrapper for fetching and normalizing NBG currency rates",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -22,7 +22,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    url="https://github.com/zelnkup/nbg-currencies-api",
     project_urls={
         "Source": "https://github.com/zelnkup/nbg-currencies-api",
         "Tracker": "https://github.com/zelnkup/nbg-currencies-api/issues",

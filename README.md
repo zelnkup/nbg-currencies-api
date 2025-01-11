@@ -19,7 +19,7 @@
 ### Install the package
 
 ```bash
-pip install nbg-currency-service
+pip install nbg-currency-api
 ```
 
 ### For Asynchronous Support
@@ -27,7 +27,7 @@ pip install nbg-currency-service
 To enable async mode, install with the optional `aiohttp` dependency:
 
 ```bash
-pip install nbg-currency-service[async]
+pip install nbg-currency-api[async]
 ```
 
 ---
