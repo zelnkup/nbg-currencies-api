@@ -2,8 +2,6 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-packages = ["nbg_currencies_api"]
 
 [project]
 name = "nbg-currencies-api"
@@ -11,7 +9,13 @@ version = "0.1.0"
 description = "A Python wrapper over NBG official exchange rate of LARI against foreign currencies"
 authors = [{name = "Illia Stebelskyi", email = "illia.stebelski@gmail.com"}]
 dependencies = ["requests"]
-license = "MIT"
+license = { file = "LICENSE" }
+readme = "README.md"
+
+
+
+[project.urls]
+Home = "https://github.com/zelnkup/nbg-currencies-api"
 
 [project.optional-dependencies]
 async = ["aiohttp"]

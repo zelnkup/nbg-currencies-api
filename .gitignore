@@ -79,3 +79,5 @@ celerybeat-schedule
 # Logs
 *.log
 *.tmp
+README.rst
+.DS_Store
