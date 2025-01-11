@@ -1,4 +1,4 @@
-
+![PyPI version](https://img.shields.io/pypi/v/nbg-currencies-api?color=blue&label=PyPI&logo=python&logoColor=white)
 # NBG Currency Service
 
 `NBGCurrencyService` is a Python library designed to fetch and normalize currency exchange rates from the National Bank of Georgia (NBG) API. It provides both synchronous and asynchronous functionality, making it suitable for various applications.

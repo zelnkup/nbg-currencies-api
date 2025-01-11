@@ -8,6 +8,9 @@ name = "nbg-currencies-api"
 version = "0.1.0"
 description = "A Python wrapper over NBG official exchange rate of LARI against foreign currencies"
 authors = [{name = "Illia Stebelskyi", email = "illia.stebelski@gmail.com"}]
+homepage = "https://github.com/zelnkup/nbg-currencies-api"
+repository = "https://github.com/zelnkup/nbg-currencies-api"
+keywords = ["nbg", "currencies", "api", "exchange rates"]
 dependencies = ["requests"]
 license = { file = "LICENSE" }
 readme = "README.md"

@@ -22,4 +22,9 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    url="https://github.com/zelnkup/nbg-currencies-api",
+    project_urls={
+        "Source": "https://github.com/zelnkup/nbg-currencies-api",
+        "Tracker": "https://github.com/zelnkup/nbg-currencies-api/issues",
+    },
 )
