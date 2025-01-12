@@ -20,7 +20,7 @@ jobs:
         run: pip install pytest pytest-cov aiohttp
 
       - name: Run tests
-        run: pytest --cov-branch --cov-report=xml
+        run: pytest --cov=nbg_currency_api --cov-branch --cov-report=xml tests/
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
