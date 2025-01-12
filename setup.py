@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setup(
     name="nbg-currencies-api",
-    version="0.1.3",
+    version="0.1.4",
     description="API wrapper for fetching and normalizing NBG currency rates",
     long_description=long_description,
     long_description_content_type="text/markdown",
