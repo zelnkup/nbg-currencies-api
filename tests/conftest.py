@@ -30,6 +30,8 @@ def currency_api_async():
         date=datetime(2025, 1, 12),
         currency=CurrencyEnum.USD,
         mode=ClientModeEnum.ASYNC,
+        delay=0.1,
+        retries=10,
     )
 
 
