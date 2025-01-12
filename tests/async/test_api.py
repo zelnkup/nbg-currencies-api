@@ -1,5 +1,8 @@
 import pytest
 from unittest.mock import patch
+
+from aiohttp import ClientConnectionError
+
 from nbg_currency_api.constants import BASE_URL
 from nbg_currency_api.exceptions import CurrencyAPIException
 from tests.mocker import MockResponse
@@ -29,3 +32,17 @@ async def test_afetch_failure(mock_client_session, currency_api_async):
         CurrencyAPIException, match="Error fetching data: 500 Internal Server Error"
     ):
         await currency_api_async.afetch()
+
+
+@pytest.mark.asyncio
+@patch("nbg_currency_api.api.aiohttp.ClientSession.get")
+async def test_afetch_client_error(mock_client_session, currency_api_async):
+    mock_client_session.side_effect = ClientConnectionError()
+
+    with pytest.raises(
+        CurrencyAPIException,
+        match=f"Failed to fetch data after {currency_api_async.retries} retries.",
+    ):
+        await currency_api_async.afetch()
+
+    assert mock_client_session.call_count == currency_api_async.retries
