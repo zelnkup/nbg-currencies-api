@@ -1,4 +1,5 @@
 ![PyPI version](https://img.shields.io/pypi/v/nbg-currencies-api?color=blue&label=PyPI&logo=python&logoColor=white)
+[![codecov](https://codecov.io/github/zelnkup/nbg-currencies-api/graph/badge.svg?token=M4R1VT9PFU)](https://codecov.io/github/zelnkup/nbg-currencies-api)
 # NBG Currency Service
 
 `NBGCurrencyService` is a Python library designed to fetch and normalize currency exchange rates from the National Bank of Georgia (NBG) API. It provides both synchronous and asynchronous functionality, making it suitable for various applications.
@@ -67,10 +68,10 @@ Fetch rates asynchronously for a specific currency:
 
 ```python
 import asyncio
-from nbg_currency_api import NBGCurrencyService, CurrencyEnum
+from nbg_currency_api import NBGCurrencyService, CurrencyEnum, ClientModeEnum
 
 async def main():
-    service = NBGCurrencyService(currency=CurrencyEnum.EUR, mode="ASYNC")
+    service = NBGCurrencyService(currency=CurrencyEnum.EUR, mode=ClientModeEnum.ASYNC)
     data = await service.afetch()
     print(data)
 

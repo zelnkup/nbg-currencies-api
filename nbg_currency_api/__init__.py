@@ -3,6 +3,7 @@ from nbg_currency_api.types import (
     CurrencyEnum,
     CurrencyRateItem,
     CurrencyDataResponse,
+    ClientModeEnum,
 )
 
 
@@ -11,4 +12,5 @@ __all__ = (
     "CurrencyDataResponse",
     "CurrencyRateItem",
     "CurrencyEnum",
+    "ClientModeEnum",
 )
